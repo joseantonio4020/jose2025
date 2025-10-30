@@ -1,0 +1,65 @@
+<header>
+  <div class="logo">
+    <img src="images/foto.jpg" alt="Foto de perfil">
+    <h1>Jose Antonio Lazo Orihuela</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Inicio</a></li>
+      <li><a routerLink="/sobre-mi">Sobre mí</a></li>
+      <li><a routerLink="/proyectos">Proyectos</a></li>
+      <li><a routerLink="/experiencia">Experiencia</a></li>
+      <li><a routerLink="/gustos" class="active">Gustos</a></li>
+      <li><a routerLink="/contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Mis Gustos e Intereses</h1>
+        <p class="hero-sub">Más allá de la universidad y la tecnología</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Lo que me gusta hacer</h2>
+    <div class="grid-proyectos">
+      
+      <!-- Comida -->
+<a routerLink="/gustos/comida" class="proyecto">
+  <img src="images/favorita.jpeg" alt="Comida">
+  <h3>Comida Favorita</h3>
+  <p>Platos que más disfruto, especialmente la comida típica de Apurímac.</p>
+</a>
+
+<!-- Música -->
+<a routerLink="/gustos/musica" class="proyecto">
+  <img src="images/music.jpg" alt="Música">
+  <h3>Música</h3>
+  <p>Los himnos del fútbol mundial y la música que me acompaña.</p>
+</a>
+
+<!-- Deportes -->
+<a routerLink="/gustos/deportes" class="proyecto">
+  <img src="images/deportes.jpg" alt="Deportes">
+  <h3>Deportes y Fútbol</h3>
+  <p>El fútbol que juego y el que me gusta ver.</p>
+</a>
+
+<!-- Entretenimiento -->
+<a routerLink="/gustos/entretenimiento" class="proyecto">
+  <img src="images/videojueg.jpeg" alt="Entretenimiento">
+  <h3>Videojuegos</h3>
+  <p>League of Legends, Minecraft y más juegos que disfruto.</p>
+</a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Todos los derechos reservados.</p>
+</footer>

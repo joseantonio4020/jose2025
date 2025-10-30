@@ -1,0 +1,84 @@
+  <header>
+  <div class="logo">
+    <img src="images/foto.jpg" alt="Foto de perfil">
+    <h1>Jose Antonio Lazo Orihuela</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/" class="active">Inicio</a></li>
+      <li><a routerLink="/sobre-mi">Sobre mí</a></li>
+      <li><a routerLink="/proyectos">Proyectos</a></li>
+      <li><a routerLink="/experiencia">Experiencia</a></li>
+      <li><a routerLink="/gustos">Gustos</a></li>
+      <li><a routerLink="/contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+  <main>
+    <section class="hero">
+      <div class="hero-inner">
+        <img src="images/foto.jpg" alt="Foto de José" class="hero-avatar">
+        <div class="hero-text">
+          <h1>José Antonio Lazo Orihuela</h1>
+          <p class="hero-sub">Hola, mi nombre es jose antonio, soy estudiante de la carrera de Ingeniería de Sistemas en la Universidad Nacional José María Arguedas.
+
+Me considero una persona responsable, perseverante y con mucho interés en la tecnología. Desde que inicié la carrera, he buscado aprender no solo lo teórico, sino también lo práctico, aplicando mis conocimientos en proyectos que combinan programación, electrónica y desarrollo de sistemas.
+
+Tengo habilidades en lenguajes de programación como Java, Python y C++, además de experiencia en bases de datos y herramientas como GitHub y NetBeans. También me interesa mucho el área de Inteligencia Artificial y Machine Learning, ya que considero que estas tecnologías son clave para transformar el futuro.
+
+Durante mi formación he trabajado en proyectos como un dispensador automático de pastillas con Arduino, un chatbot de asistencia estudiantil y una aplicación web educativa llamada QuizEdu, los cuales me han permitido reforzar mi capacidad de análisis, creatividad y trabajo en equipo.
+
+Mis objetivos son, a corto plazo, concluir mi carrera con éxito, y a mediano y largo plazo, especializarme en Inteligencia Artificial y Ciencia de Datos, para contribuir con soluciones tecnológicas innovadoras que beneficien a la sociedad.</p>
+        <div class="hero-ctas">
+            <a routerLink="/sobre-mi" class="btn btn-primary">Sobre mí</a>
+            <a routerLink="/proyectos" class="btn btn-outline">Proyectos</a>
+            <a routerLink="/contacto" class="btn btn-secondary">Contacto</a>
+        </div>
+        </div>
+      </div>
+    </section>
+    
+    <section style="margin-top: 40px;">
+      <h2 style="text-align: center; color: #333; margin-bottom: 30px;">Bienvenido a mi portafolio</h2>
+      <div class="grid-proyectos">
+        <div style="text-align: center; padding: 20px;">
+          <h3 style="color: #667eea;">🎓 Estudiante</h3>
+          <p>5to ciclo de Ingeniería de Sistemas en UNAJMA</p>
+        </div>
+        <div style="text-align: center; padding: 20px;">
+          <h3 style="color: #667eea;">💡 Proyectos</h3>
+          <p>Enfocado en Arduino y soluciones tecnológicas para la comunidad</p>
+        </div>
+        <div style="text-align: center; padding: 20px;">
+          <h3 style="color: #667eea;">📍 Ubicación</h3>
+          <p>Andahuaylas, Apurímac, Perú</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección de proyectos destacados -->
+<!-- Sección de proyectos destacados -->
+<section style="margin-top: 40px;">
+  <h2 style="color: #333; margin-bottom: 20px;">Proyectos Destacados</h2>
+  
+  <!-- Mensaje de carga -->
+  <div *ngIf="cargando" style="text-align: center; padding: 40px;">
+    <p style="font-size: 18px; color: #667eea;">⏳ Cargando proyectos...</p>
+  </div>
+
+  <!-- Grid de proyectos usando componente hijo -->
+  <div class="grid-proyectos" *ngIf="!cargando">
+    <app-proyecto-card 
+      *ngFor="let proyecto of proyectos"
+      [proyecto]="proyecto"
+      (proyectoClick)="onProyectoSeleccionado($event)">
+    </app-proyecto-card>
+  </div>
+</section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Todos los derechos reservados.</p>
+
+  </footer>
+

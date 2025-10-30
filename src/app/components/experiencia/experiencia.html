@@ -1,0 +1,64 @@
+<header>
+  <div class="logo">
+    <img src="images/foto.jpg" alt="Foto de perfil">
+    <h1>Jose Antonio Lazo Orihuela</h1>
+  </div>
+  <nav>
+    <ul>
+      <li><a routerLink="/">Inicio</a></li>
+      <li><a routerLink="/sobre-mi">Sobre mí</a></li>
+      <li><a routerLink="/proyectos">Proyectos</a></li>
+      <li><a routerLink="/experiencia" class="active">Experiencia</a></li>
+      <li><a routerLink="/gustos">Gustos</a></li>
+      <li><a routerLink="/contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h1>Mi Experiencia</h1>
+        <p class="hero-sub">Recorrido académico y personal en Ingeniería de Sistemas</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Áreas de Experiencia</h2>
+    <div class="grid-proyectos">
+      
+            <!-- Universidad -->
+        <a routerLink="/experiencia/universidad" class="proyecto">
+        <img src="images/vidau.jpeg" alt="Universidad">
+        <h3>Vida Universitaria</h3>
+        <p>Mi experiencia en UNAJMA, materias y compañeros.</p>
+        </a>
+
+        <!-- Estudios -->
+        <a routerLink="/experiencia/materias-favoritas" class="proyecto">
+        <img src="images/studya.jpeg" alt="Estudios">
+        <h3>Estudios Académicos</h3>
+        <p>Materias favoritas y trabajos destacados.</p>
+        </a>
+
+        <!-- Motivaciones -->
+        <a routerLink="/experiencia/como-empece" class="proyecto">
+        <img src="images/desarrollop.jpg" alt="Motivaciones">
+        <h3>Desarrollo Personal</h3>
+        <p>Cómo empecé y mis motivaciones en la carrera.</p>
+        </a>
+
+        <a routerLink="/experiencia/horario" class="proyecto">
+        <img src="images/horario.png" alt="Horario">
+        <h3>Mi Horario de Clases</h3>
+        <p>Distribución de mis materias del 5to ciclo.</p>
+        </a>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>&copy; 2025 Todos los derechos reservados.</p>
+</footer>
