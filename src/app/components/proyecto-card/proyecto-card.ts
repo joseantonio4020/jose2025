@@ -1,9 +1,8 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-proyecto-card',
-  imports: [RouterLink],
+  imports: [],
   templateUrl: './proyecto-card.html',
   styleUrl: './proyecto-card.css'
 })

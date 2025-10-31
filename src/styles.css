@@ -308,9 +308,9 @@ body {
 
 /* Botones */
 .btn { padding:10px 16px; border-radius:8px; text-decoration:none; font-weight:600; display:inline-block; }
-.btn-primary { background:#fff; color:#5b3db6; }
-.btn-outline { background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.25); }
-.btn-secondary { background: rgba(255,255,255,0.15); color:#fff; }
+.btn-primary { background:#db1e1e; color:#5b3db6; }
+.btn-outline { background:transparent; color:#d61d1d; border:1px solid rgba(255, 0, 0, 0.25); }
+.btn-secondary { background: rgba(255,255,255,0.15); color:#e21919; }
 
 /* pequeño efecto */
 .btn:hover { transform: translateY(-3px); transition: .18s ease; }
